@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #9eabb1;
+}
+
+.container {
+    max-width: 825px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.row-left {
+    width: 30%;
+    background-color: #082239;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.row-left img {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    margin: 2rem auto;
+    border-radius: 50%;
+    border: 2px solid white;
+    object-fit: cover;
+}
+
+.message {
+    position: relative;
+    max-width: 90%;
+    height: auto;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #01162b;
+}
+
+.message::after {
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    border-right: 1px solid #01162b;
+    border-bottom: 1px solid #01162b;
+    top: 110%;
+    left: 55%;
+    margin-left: -25px;
+    content: '';
+    transform: rotate(45deg);
+    margin-top: -26px;
+    background-color: #01162b;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    margin: 2rem auto;
+    font-size: 0.85rem;
+}
+.row-left .message{
+    color: #fff;
+
+}
+
+.row-left section header {
+    width: 100%;
+    padding: 0.75rem 2rem;
+    background-color: #001429;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.row-left header h1 {
+    margin: 0 1.5rem;
+    font-size: 1rem;
+}
+header .fas , header .far{
+    font-size: 1.5rem;
+}
+.list-style {
+    margin: 1rem ;
+    color: #9eabb1;
+}
+
+.list-style li {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0.75rem;
+}
+
+.icon {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+
+.row-right {
+    width: 70%;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.row-right section {
+    display: flex;
+}
+
+.row-right section header {
+    margin: 1rem 0;
+    width: 3rem;
+    height: 15rem;
+    background-color: #ff6600;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    position: relative;
+}
+
+.row-right section header h3 {
+    position: absolute;
+    transform: rotate(270deg);
+    left: -35%;
+    top: 42%;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.row-right article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.row-right article p {
+    font-size: 1rem;
+    margin: 1rem 1rem;
+    font-weight: bold;
+}
+
+.d0::after {
+    display: block;
+    content: "Bilişim Sistemleri Mühendisliği";
+    font-size: 1rem;
+    color: gray;
+}
+
+hr {
+    width: 75%;
+    margin: 0 auto;
+    color: #eeeeee;
+}
+
+.ara {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.stick {
+    width: 0.25rem;
+    height: 3rem;
+    background-color: #01162b;
+    position: relative;
+}
+
+.stick::after {
+    position: absolute;
+    width: 0.5rem;
+    height: 0.5rem;
+    content: "";
+    border: 2px solid #01162b;
+    border-radius: 50%;
+    top: 40%;
+    left: -100%;
+    background-color: #fff;
+}
+
+.row-right .sectionTwo {
+    background-color: #92c715;
+}
+
+.row-right .sectionTwo h3 {
+    position: absolute;
+    transform: rotate(270deg);
+    left: -100%;
+    top: 45%;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+article .d1::after {
+    display: block;
+    content: "İnsan Kaynakları Departmanı | Stajyer";
+    font-size: 1rem;
+    color: gray;
+}
+
+article .d2::after {
+    display: block;
+    content: "Bilgi İşlem Departmanı | Stajyer";
+    font-size: 1rem;
+    color: gray;
+}
+
+.row-right .sectionThree {
+    background-color: #f40441;
+}
+
+.row-right .sectionThree h3 {
+    position: absolute;
+    transform: rotate(270deg);
+    left: -100%;
+    top: 45%;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.row-right .articleOne p {
+    font-size: 1rem;
+    margin: 0.55rem 0;
+    font-weight: bold;
+    text-align: right;
+    margin-left:5rem;
+}
+.row-right .list-article li {
+    display: flex;
+    align-items: center;
+    color: #08243a;
+    padding: 0.55rem 10rem;
+    margin-left: -5rem;
+}
+
+.row-right .sectionFour {
+    background-color: #5f0da0;
+}
+
+.row-right .sectionFour h3 {
+    position: absolute;
+    transform: rotate(270deg);
+    left: -155%;
+    top: 45%;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.row-right article a{
+    color: black;
+    margin: 1rem 9rem;
+    position: relative;
+}
+.row-right article a::before{
+    margin: 1rem;
+    width: 0.75rem;
+    height: 0.75rem;
+    position: absolute;
+    content: "";
+    border: 2px solid #01162b;
+    border-radius: 50%;
+    top: -20%;
+    left: -25%;
+    background-color: #fff;
+}
+.row-right .sectionFive{
+    background-color: #0ba2fb;
+}
+.row-right .sectionFive h3{
+    position: absolute;
+    transform: rotate(270deg);
+    left: -50%;
+    top: 45%;
+    color: #fff;
+    letter-spacing: 1px;
+}
